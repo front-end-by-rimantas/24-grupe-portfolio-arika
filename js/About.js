@@ -1,25 +1,24 @@
- /* ----------------- IMPORTS ----------------- */
- /* header */
- /* hero */
- /* about me */
- /* services */
- /* works */
- /* professional skills */
- /* testimonials */
- /* blogs */
- /* contact me */
- /* footer */
- /* left ones */
+// ----------------- IMPORTS ----------------- 
+// header 
+// hero 
+// about 
+// works 
+// awards 
+// pricing-plans 
+// team 
+// blogs 
+// start-project 
+// footer 
 
- /* ----------------- CODING ----------------- */
- /* header */
- /* hero */
- /* about me */
- /* services */
- /* works */
- /* professional skills */
- /* testimonials */
- /* blogs */
- /* contact me */
- /* footer */
- /* left ones */
+// ----------------- CODING ----------------- 
+
+// header 
+// hero 
+// about 
+// works 
+// awards 
+// pricing-plans 
+// team 
+// blogs 
+// start-project 
+// footer 

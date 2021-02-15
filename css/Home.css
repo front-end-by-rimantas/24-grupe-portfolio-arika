@@ -1,4 +1,9 @@
  /* ----------------- IMPORTS ----------------- */
+
+ /* INIT */
+ @import './components/reset.css';
+ @import './components/layout.css';
+
  /* header */
  /* hero */
  /* about me */
@@ -9,10 +14,9 @@
  /* blogs */
  /* contact me */
  /* footer */
- /* left ones */
-@import './components/reset.css';
-@import './components/layout.css';
+
  /* ----------------- CODING ----------------- */
+
  /* header */
  /* hero */
  /* about me */
@@ -23,4 +27,3 @@
  /* blogs */
  /* contact me */
  /* footer */
- /* left ones */
