@@ -12,8 +12,8 @@
      display: inline-block;
      width: 100%;
      text-align: center;
-     background-image: url(/img/background.jpg);
-     background-size: cover ;
+     background-image: url(../img/background.jpg);
+     background-size: cover;
  }
  .container {
      display: inline-block;
