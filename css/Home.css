@@ -17,13 +17,18 @@
  }
  .container {
      display: inline-block;
-     width: 55%;
+     margin: 0 auto;
      margin-top: 5%;
-     padding-right: 10px;
+     max-width: 1250px;
+     width: 90%;
  }
  .right-column {
      display: inline-block;
      float: right;
+     
+ }
+ .right-column > img {
+     max-width: 100%;
  }
  .left-column {
      display: inline-block;
@@ -33,6 +38,7 @@
      text-align: left;
      border-left: 4px solid #fff;
      padding-left: 30px;
+     margin-bottom: 70px;
  }
  .left-column > h1 {
      font-size: 60px;
@@ -41,8 +47,24 @@
      font-size: 20px;
      padding: 24px 0;
  }
+ /* Home Responsive */
+ @media (max-width:1400px) {
+    .container{
+        max-width: 1000px;
+    }
+}
 
+ @media (max-width:1000px) {
+     .container{
+         max-width: 500px;
+     } 
+ }
 
+ @media (max-width:1000px) {
+     .left-column {
+         margin-top: 10%;
+     }
+ }
  /* about me */
  /* services */
  /* works */
