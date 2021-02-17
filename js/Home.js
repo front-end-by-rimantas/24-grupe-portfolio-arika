@@ -28,7 +28,7 @@ TypeWriter.prototype.type = function() {
     let typeSpeed = 200;
 
     if (this.isDeleting) {
-        typeSpeed /= 2;
+        typeSpeed /= 3;
     }
 
     if (!this.isDeleting &&
