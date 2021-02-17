@@ -19,7 +19,7 @@
      display: inline-block;
      margin: 0 auto;
      margin-top: 5%;
-     max-width: 1250px;
+     max-width: 1140px;
      width: 90%;
  }
  .right-column {
@@ -46,6 +46,12 @@
  .left-column > p {
      font-size: 20px;
      padding: 24px 0;
+ }
+ .txt-type {
+    padding-left: 10px;
+ }
+ .txt-type > .txt {
+     border-right: 0.2rem solid #fff;
  }
  /* Home Responsive */
  @media (max-width:1400px) {
