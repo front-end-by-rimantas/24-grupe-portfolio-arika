@@ -25,6 +25,10 @@ Design: [Martin](http://inventheme.com/themeforest/martin/)
 
 ## Authors
 
-Eividas: [Github] (https://github.com/T0R7AS1)
+Aivaras: [Github](https://github.com/Aivarelio)
+Andrius: [Github](https://github.com/Ashtunkojis)
+Eduardas: [Github](https://github.com/Edislat22)
+Eividas: [Github](https://github.com/T0R7AS1)
+Jan Aksamit: [Github](https://github.com/JanAksamit)
 
 _susirašome savo vardus ir nuorodas į Github profilį ir/arba Linkedin profilį_
