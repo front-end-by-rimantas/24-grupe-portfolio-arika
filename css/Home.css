@@ -3,9 +3,74 @@
  /* INIT */
  @import './components/reset.css';
  @import './components/layout.css';
+ @import './components/button.css';
+ @import './components/variables.css';
 
  /* header */
  /* hero */
+ .home {
+     display: inline-block;
+     width: 100%;
+     text-align: center;
+     background-image: url(../img/background.jpg);
+     background-size: cover ;
+ }
+ .container {
+     display: inline-block;
+     margin: 0 auto;
+     margin-top: 5%;
+     max-width: 1140px;
+     width: 90%;
+ }
+ .right-column {
+     display: inline-block;
+     float: right;
+     
+ }
+ .right-column > img {
+     max-width: 100%;
+ }
+ .left-column {
+     display: inline-block;
+     float: left;
+     margin-top: 26%;
+     color: #fff;
+     text-align: left;
+     border-left: 4px solid #fff;
+     padding-left: 30px;
+     margin-bottom: 70px;
+ }
+ .left-column > h1 {
+     font-size: 60px;
+ }
+ .left-column > p {
+     font-size: 20px;
+     padding: 24px 0;
+ }
+ .txt-type {
+    padding-left: 10px;
+ }
+ .txt-type > .txt {
+     border-right: 0.2rem solid #fff;
+ }
+ /* Home Responsive */
+ @media (max-width:1400px) {
+    .container{
+        max-width: 1000px;
+    }
+}
+
+ @media (max-width:1000px) {
+     .container{
+         max-width: 500px;
+     } 
+ }
+
+ @media (max-width:1000px) {
+     .left-column {
+         margin-top: 10%;
+     }
+ }
  /* about me */
  /* services */
  /* works */
