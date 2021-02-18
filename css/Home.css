@@ -5,7 +5,7 @@
  @import './components/layout.css';
  @import './components/button.css';
  @import './components/variables.css';
-
+ @import './components/mark.css';
  /* header */
  /* hero */
  .home {
@@ -15,7 +15,7 @@
      background-image: url(../img/background.jpg);
      background-size: cover ;
  }
- .container {
+ .home-container {
      display: inline-block;
      margin: 0 auto;
      margin-top: 5%;
@@ -72,6 +72,54 @@
      }
  }
  /* about me */
+.about {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+}
+.about-container {
+    display: inline-block;
+    max-width: 1050px;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 6%;
+}
+
+.left-about {
+    display: inline-block;
+    float: left;
+    width: 42%;
+}
+.right-about {
+    display: inline-block;
+    float: right;
+    text-align: left;
+    width: 51%;
+    
+    
+}
+.right-about > h1 {
+    font-size: 30px;
+    padding-top: 20%;
+}
+.right-about > h2 {
+    font-size: 20px;
+    padding-top: 5%;
+}
+.left-about > img {
+    max-width: 100%;
+}
+.right-about > p {
+    font-size: 15px;
+    color: #828282;
+    padding: 5% 0 2%;
+} 
+.right-about > .btn {
+    margin: 3% 2% 0 0 ;
+}
+
+
+
  /* services */
  /* works */
  /* professional skills */
