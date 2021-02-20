@@ -133,33 +133,111 @@
     display: inline-block;
 
 }
-.work-section > .work > .row > p {
+.work-section .row > p {
     padding-bottom: 60px;
     max-width: 700px;
     margin: 0 auto;
     font-size: 16px;
 }
-.work-section > .work > .row > img {
+.work-section .row > .box {
+    display: inline-block;
     width: 33.45%;
+    margin-right:-4px;
 }
-.work-section > .work > .row > img{
-       margin-right:-4px;
+.work-section .img-box > img {
+    max-width: 100%;
+    position: relative;
 }
 
 /* works responsive */
 @media(max-width: 1000px){
-   .work-section > .work > .row > img {
+   .work-section .row > .box {
        width: 50%;
-   }
-   .work-section > .work > .row > p {
-       margin-left: 3%;
    }
 }
 @media(max-width: 600px){
-   .work-section > .work > .row > img {
+   .work-section .row > .box {
        width: 100%;
    }
 }
+
+/* Works hover animations */
+
+.box {
+    position: relative;
+    overflow: hidden;
+}
+.img-box:hover .content {
+    position: absolute;
+    opacity: 1;
+}
+.img-box .content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(17, 17, 17, 0.4) ;
+    transition: ease all 0.55s;
+    opacity: 0;
+}
+.content .plus {
+    display: inline-block;
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+}
+.content .plus i::after {
+    width: 1px;
+    height: 100%;
+}
+.content .plus i::after,
+.content .plus i::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background: #fff;
+}
+.content .plus i::before{
+    height: 1px;
+    width: 100%;
+}
+.img-box:hover .plus i {
+    width: 100%;
+    height: 100%;
+}
+.content .plus i {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+.content h2 {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: #ef4464;
+    padding: 20px;
+    font-size: 15px;
+}
+.content a {
+    text-decoration: none;
+    color: #fff;
+}
+
+
  /* professional skills */
  /* testimonials */
  /* blogs */
