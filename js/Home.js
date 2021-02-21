@@ -76,8 +76,6 @@ const closeIcon = previewBox.querySelector(".icon");
 const currentImg = previewBox.querySelector(".current");
 const totalImg = previewBox.querySelector(".total");
 const background = document.querySelector(".background");
-const dontAppear = document.querySelectorAll("h2");
-
 
 window.onload = ()=>{
     for (let i = 0; i < gallery.length; i++) {
