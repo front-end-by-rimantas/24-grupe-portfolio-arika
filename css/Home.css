@@ -181,7 +181,7 @@
     transition: ease all 0.55s;
     opacity: 0;
 }
-.content .plus {
+.content .plus-box {
     display: inline-block;
     width: 70px;
     height: 70px;
@@ -192,12 +192,12 @@
     right: 0;
     margin: auto;
 }
-.content .plus i::after {
+.content .plus-box .plus::after {
     width: 1px;
     height: 100%;
 }
-.content .plus i::after,
-.content .plus i::before{
+.content .plus-box .plus::after,
+.content .plus-box .plus::before{
     content: '';
     position: absolute;
     top: 0;
@@ -207,21 +207,24 @@
     margin: auto;
     background: #fff;
 }
-.content .plus i::before{
+.content .plus-box .plus::before{
     height: 1px;
     width: 100%;
 }
-.img-box:hover .plus i {
+.img-box:hover .plus-box .plus {
     width: 100%;
     height: 100%;
 }
-.content .plus i {
+.content .plus-box .plus {
     position: absolute;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
     margin: auto;
+}
+.btn-none{
+    font-weight: 700;
 }
 .content h2 {
     position: absolute;
@@ -232,9 +235,107 @@
     padding: 20px;
     font-size: 15px;
 }
-.content a {
-    text-decoration: none;
+.content button {
+    background: transparent;
+    border: none;
     color: #fff;
+}
+.plus-box{
+    cursor: pointer;
+}
+.content a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* works image gallery */
+
+.preview-box {
+    position: fixed;
+    max-width: 700px;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.9);
+    background-color: transparent;
+    color: #fff;
+    border-radius: 3px;
+    opacity: 0;
+    pointer-events: none;
+    z-index: 5;
+}
+.preview-box.show {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translate(-50%, -50%) scale(1);
+    transition: all 1s ease;
+
+}
+.preview-box .details {
+    display: flex;
+    align-items: center;
+    padding: 12px 15px 12px 12px;
+    justify-content: space-between;
+}
+.preview-box .details .icon {
+    color: gray;
+    cursor: pointer;
+    font-size: 20px;
+}
+.preview-box .details .icon:hover {
+    color: #fff;
+}
+.details .side-title {
+    display: flex;
+    font-size: 18px;
+    font-weight: 400;
+}
+.details .side-title p {
+    margin: 0 5px;
+}
+.preview-box .popup {
+    display: flex;
+    width: 100%;
+}
+.popup .slide {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 60px;
+    cursor: pointer;
+    color: white;
+    width: 60px;
+    line-height: 50px;
+    text-align: center;
+}
+.popup .slide.prev {
+    left: 0;
+    color: lightgrey;
+}
+.popup .slide.next {
+    right: 0;
+    color: lightgrey;
+}
+.popup .slide.next:hover {
+    color: #fff;
+}
+.popup .slide.next:hover {
+    color: #fff;
+}
+.preview-box .popup img {
+    width: 100%;
+    border-radius: 0 0 3px 3px;
+}
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    display: none;
+    background-color: rgba(0, 0, 0, .8);
 }
 
 
