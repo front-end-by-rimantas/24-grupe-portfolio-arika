@@ -5,8 +5,11 @@
  @import './components/layout.css';
  @import './components/button.css';
  @import './components/variables.css';
- @import './components/mark.css';
+ @import './components/layout.css';
+ @import './components/work-accessories.css';
+
  /* header */
+
  /* hero */
  .home {
      display: inline-block;
@@ -15,11 +18,10 @@
      background-image: url(../img/background.jpg);
      background-size: cover ;
  }
- .home-container {
+ .hero {
      display: inline-block;
      margin: 0 auto;
      margin-top: 5%;
-     max-width: 1140px;
      width: 90%;
  }
  .right-column {
@@ -55,14 +57,14 @@
  }
  /* Home Responsive */
  @media (max-width:1400px) {
-    .container{
+    .hero{
         max-width: 1000px;
     }
 }
 
  @media (max-width:1000px) {
-     .container{
-         max-width: 500px;
+     .hero{
+         max-width: 700px;
      } 
  }
 
@@ -72,17 +74,15 @@
      }
  }
  /* about me */
-.about {
+.about-section {
     display: inline-block;
     width: 100%;
     text-align: center;
 }
-.about-container {
+.about {
     display: inline-block;
-    max-width: 1050px;
-    width: 90%;
     margin: 0 auto;
-    margin-top: 6%;
+    margin-top: 1%;
 }
 
 .left-about {
@@ -95,8 +95,7 @@
     float: right;
     text-align: left;
     width: 51%;
-    
-    
+
 }
 .right-about > h1 {
     font-size: 30px;
@@ -121,7 +120,46 @@
 
 
  /* services */
+
+
  /* works */
+.work-section {
+    display: inline-block;
+    width: 100%;
+    padding-top: 80px;
+    text-align: center;
+}
+.work-section > .work > .row{
+    display: inline-block;
+
+}
+.work-section > .work > .row > p {
+    padding-bottom: 60px;
+    max-width: 700px;
+    margin: 0 auto;
+    font-size: 16px;
+}
+.work-section > .work > .row > img {
+    width: 33.45%;
+}
+.work-section > .work > .row > img{
+       margin-right:-4px;
+}
+
+/* works responsive */
+@media(max-width: 1000px){
+   .work-section > .work > .row > img {
+       width: 50%;
+   }
+   .work-section > .work > .row > p {
+       margin-left: 3%;
+   }
+}
+@media(max-width: 600px){
+   .work-section > .work > .row > img {
+       width: 100%;
+   }
+}
  /* professional skills */
  /* testimonials */
  /* blogs */
