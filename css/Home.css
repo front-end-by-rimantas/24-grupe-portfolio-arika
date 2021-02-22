@@ -25,7 +25,6 @@
  .right-column {
      display: inline-block;
      float: right;
-     
  }
  .right-column > img {
      max-width: 100%;
@@ -88,6 +87,46 @@
  /* services */
  /* works */
  /* professional skills */
+ .container-skills {
+    display: inline-block;
+    margin: 0 auto;
+    margin-top: 5%;
+    max-width: 1140px;
+    width: 90%;
+    padding: 100px;
+    width: 100%;
+    font-family: 'Roboto Slab', serif;
+ }
+.left-column-skills {
+    display: inline-block;
+    float: left;
+    width: 50%;
+}
+.right-column-skills {
+    display: inline-block;
+    float: right;
+    width: 50%;
+}
+.right-column-skills > img {
+    max-width: 100%;
+    vertical-align: middle;
+    border-style: none;
+    box-sizing: border-box;
+}
+.left-column-skills > h2 {
+    padding-bottom: 20px;
+}
+.gray-bg {
+    background-color: #f5f8fd;
+}
+.left-column-skills > p {
+    font-family: "Open Sans", sans-serif;
+    font-size: 15px;
+    color: #828282;
+    font-weight: 400;
+    line-height: 1.6;
+
+}
  /* testimonials */
  /* blogs */
  /* contact me */
