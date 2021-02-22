@@ -1,4 +1,6 @@
 //   ----------------- IMPORTS -----------------
+import { progressBarData } from './data/progressBarData.js';
+import { ProgressBar } from './ProgressBar.js';
 //   header
 //   hero
 const TypeWriter = function(txtElement, words, wait = 500) {
@@ -70,6 +72,7 @@ function init() {
 //   services
 //   works
 //   professional skills
+new ProgressBar('.left-column-skills', progressBarData);
 //   testimonials
 //   blogs
 //   contact me

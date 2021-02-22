@@ -5,6 +5,7 @@
  @import './components/layout.css';
  @import './components/button.css';
  @import './components/variables.css';
+ @import './components/progress-bar.css';
 
  /* header */
  /* hero */
@@ -91,21 +92,21 @@
     display: inline-block;
     margin: 0 auto;
     margin-top: 5%;
-    max-width: 1140px;
-    width: 90%;
     padding: 100px;
     width: 100%;
-    font-family: 'Roboto Slab', serif;
  }
 .left-column-skills {
     display: inline-block;
     float: left;
     width: 50%;
+    padding-right: 40px;
 }
 .right-column-skills {
     display: inline-block;
     float: right;
     width: 50%;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 .right-column-skills > img {
     max-width: 100%;
@@ -114,7 +115,11 @@
     box-sizing: border-box;
 }
 .left-column-skills > h2 {
+    font-weight: 700;
+    font-size: 44px;
+    margin-top: 50px;
     padding-bottom: 20px;
+    font-family: "Dosis", sans-serif;
 }
 .gray-bg {
     background-color: #f5f8fd;
@@ -125,6 +130,7 @@
     color: #828282;
     font-weight: 400;
     line-height: 1.6;
+    padding-bottom: 25px;
 
 }
  /* testimonials */
