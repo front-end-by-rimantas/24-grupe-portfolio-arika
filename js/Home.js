@@ -1,4 +1,6 @@
 //   ----------------- IMPORTS -----------------
+import { progressBarData } from './data/progressBarData.js';
+import { ProgressBar } from './ProgressBar.js';
 //   header
 //   hero
 //   about me
@@ -123,6 +125,7 @@ window.onload = ()=>{
     }
 }
 //   professional skills
+new ProgressBar('.left-column-skills', progressBarData);
 //   testimonials
 //   blogs
 //   contact me
