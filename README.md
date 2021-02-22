@@ -9,7 +9,7 @@ _24 group portfolio website project_
 
 This project is for educational porpuses only. Pull request are welcome, but priority for my real-life students! Thank you for your cooperation!
 
-Site published at https://front-end-by-rimantas.github.io/24-grupe-portfolio/
+Site published at https://front-end-by-rimantas.github.io/24-grupe-portfolio-arika/
 
 Design: [Martin](http://inventheme.com/themeforest/martin/)
 
@@ -25,6 +25,10 @@ Design: [Martin](http://inventheme.com/themeforest/martin/)
 
 ## Authors
 
-Rimantas: [Github](https://github.com/belauzas)
+Aivaras: [Github](https://github.com/Aivarelio) <br>
+Andrius: [Github](https://github.com/Ashtunkojis) <br>
+Eduardas: [Github](https://github.com/Edislat22) <br>
+Eividas: [Github](https://github.com/T0R7AS1) <br>
+Jan Aksamit: [Github](https://github.com/JanAksamit) <br>
 
 _susirašome savo vardus ir nuorodas į Github profilį ir/arba Linkedin profilį_

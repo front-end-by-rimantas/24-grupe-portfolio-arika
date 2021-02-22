@@ -1,4 +1,180 @@
-@import './components/reset.css';
-@import './components/layout.css';
+ /* ----------------- IMPORTS ----------------- */
 
-/* CUSTOM HOME PAGE CSS */
+ /* INIT */
+ @import './components/reset.css';
+ @import './components/layout.css';
+ @import './components/button.css';
+ @import './components/variables.css';
+ @import './components/layout.css';
+ @import './components/work-accessories.css';
+
+ /* header */
+
+ /* hero */
+ .home {
+     display: inline-block;
+     width: 100%;
+     text-align: center;
+     background-image: url(../img/background.jpg);
+     background-size: cover ;
+ }
+ .hero {
+     display: inline-block;
+     margin: 0 auto;
+     margin-top: 5%;
+     width: 90%;
+ }
+ .right-column {
+     display: inline-block;
+     float: right;
+     
+ }
+ .right-column > img {
+     max-width: 100%;
+ }
+ .left-column {
+     display: inline-block;
+     float: left;
+     margin-top: 26%;
+     color: #fff;
+     text-align: left;
+     border-left: 4px solid #fff;
+     padding-left: 30px;
+     margin-bottom: 70px;
+ }
+ .left-column > h1 {
+     font-size: 60px;
+ }
+ .left-column > p {
+     font-size: 20px;
+     padding: 24px 0;
+ }
+ .txt-type {
+    padding-left: 10px;
+ }
+ .txt-type > .txt {
+     border-right: 0.2rem solid #fff;
+ }
+ /* Home Responsive */
+ @media (max-width:1400px) {
+    .hero{
+        max-width: 1000px;
+    }
+}
+
+ @media (max-width:1000px) {
+     .hero{
+         max-width: 700px;
+     } 
+ }
+
+ @media (max-width:1000px) {
+     .left-column {
+         margin-top: 10%;
+     }
+ }
+ /* about me */
+.about-section {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+}
+.about {
+    display: inline-block;
+    margin: 0 auto;
+    margin-top: 1%;
+}
+
+.left-about {
+    display: inline-block;
+    float: left;
+    width: 42%;
+}
+.right-about {
+    display: inline-block;
+    float: right;
+    text-align: left;
+    width: 51%;
+
+}
+.right-about > h1 {
+    font-size: 30px;
+    padding-top: 20%;
+}
+.right-about > h2 {
+    font-size: 20px;
+    padding-top: 5%;
+}
+.left-about > img {
+    max-width: 100%;
+}
+.right-about > p {
+    font-size: 15px;
+    color: #828282;
+    padding: 5% 0 2%;
+} 
+.right-about > .btn {
+    margin: 3% 2% 0 0 ;
+}
+
+
+
+ /* services */
+
+
+ /* works */
+.work-section {
+    display: inline-block;
+    width: 100%;
+    padding-top: 80px;
+    text-align: center;
+}
+.work-section > .work > .row{
+    display: inline-block;
+
+}
+.work-section > .work > .row > p {
+    padding-bottom: 60px;
+    max-width: 700px;
+    margin: 0 auto;
+    font-size: 16px;
+}
+.work-section > .work > .row > img {
+    width: 33.45%;
+}
+.work-section > .work > .row > img{
+       margin-right:-4px;
+}
+
+/* works responsive */
+@media(max-width: 1000px){
+   .work-section > .work > .row > img {
+       width: 50%;
+   }
+   .work-section > .work > .row > p {
+       margin-left: 3%;
+   }
+}
+@media(max-width: 600px){
+   .work-section > .work > .row > img {
+       width: 100%;
+   }
+}
+ /* professional skills */
+ /* testimonials */
+ /* blogs */
+ /* contact me */
+ /* footer */
+
+ /* ----------------- CODING ----------------- */
+
+ /* header */
+ /* hero */
+ /* about me */
+ /* services */
+ /* works */
+ /* professional skills */
+ /* testimonials */
+ /* blogs */
+ /* contact me */
+ /* footer */
