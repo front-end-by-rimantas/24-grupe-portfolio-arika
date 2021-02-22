@@ -133,33 +133,212 @@
     display: inline-block;
 
 }
-.work-section > .work > .row > p {
+.work-section .row > p {
     padding-bottom: 60px;
     max-width: 700px;
     margin: 0 auto;
     font-size: 16px;
 }
-.work-section > .work > .row > img {
+.work-section .row > .box {
+    display: inline-block;
     width: 33.45%;
+    margin-right:-4px;
 }
-.work-section > .work > .row > img{
-       margin-right:-4px;
+.work-section .img-box > img {
+    max-width: 100%;
+    position: relative;
 }
 
 /* works responsive */
 @media(max-width: 1000px){
-   .work-section > .work > .row > img {
+   .work-section .row > .box {
        width: 50%;
-   }
-   .work-section > .work > .row > p {
-       margin-left: 3%;
    }
 }
 @media(max-width: 600px){
-   .work-section > .work > .row > img {
+   .work-section .row > .box {
        width: 100%;
    }
 }
+
+/* Works hover animations */
+
+.box {
+    position: relative;
+    overflow: hidden;
+}
+.img-box:hover .content {
+    position: absolute;
+    opacity: 1;
+}
+.img-box .content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(17, 17, 17, 0.4) ;
+    transition: ease all 0.55s;
+    opacity: 0;
+}
+.content .plus-box {
+    display: inline-block;
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+}
+.content .plus-box .plus::after {
+    width: 1px;
+    height: 100%;
+}
+.content .plus-box .plus::after,
+.content .plus-box .plus::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background: #fff;
+}
+.content .plus-box .plus::before{
+    height: 1px;
+    width: 100%;
+}
+.img-box:hover .plus-box .plus {
+    width: 100%;
+    height: 100%;
+}
+.content .plus-box .plus {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+.btn-none{
+    font-weight: 700;
+}
+.content h2 {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: #ef4464;
+    padding: 20px;
+    font-size: 15px;
+}
+.content button {
+    background: transparent;
+    border: none;
+    color: #fff;
+}
+.plus-box{
+    cursor: pointer;
+}
+.content a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* works image gallery */
+
+.preview-box {
+    position: fixed;
+    max-width: 700px;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.9);
+    background-color: transparent;
+    color: #fff;
+    border-radius: 3px;
+    opacity: 0;
+    pointer-events: none;
+    z-index: 5;
+}
+.preview-box.show {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translate(-50%, -50%) scale(1);
+    transition: all 1s ease;
+
+}
+.preview-box .details {
+    display: flex;
+    align-items: center;
+    padding: 12px 15px 12px 12px;
+    justify-content: space-between;
+}
+.preview-box .details .icon {
+    color: gray;
+    cursor: pointer;
+    font-size: 20px;
+}
+.preview-box .details .icon:hover {
+    color: #fff;
+}
+.details .side-title {
+    display: flex;
+    font-size: 18px;
+    font-weight: 400;
+}
+.details .side-title p {
+    margin: 0 5px;
+}
+.preview-box .popup {
+    display: flex;
+    width: 100%;
+}
+.popup .slide {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 60px;
+    cursor: pointer;
+    color: white;
+    width: 60px;
+    line-height: 50px;
+    text-align: center;
+}
+.popup .slide.prev {
+    left: 0;
+    color: lightgrey;
+}
+.popup .slide.next {
+    right: 0;
+    color: lightgrey;
+}
+.popup .slide.next:hover {
+    color: #fff;
+}
+.popup .slide.next:hover {
+    color: #fff;
+}
+.preview-box .popup img {
+    width: 100%;
+    border-radius: 0 0 3px 3px;
+}
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    display: none;
+    background-color: rgba(0, 0, 0, .8);
+}
+
+
  /* professional skills */
  /* testimonials */
  /* blogs */
