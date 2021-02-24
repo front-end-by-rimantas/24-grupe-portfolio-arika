@@ -5,76 +5,90 @@
  @import './components/layout.css';
  @import './components/button.css';
  @import './components/variables.css';
- @import './components/progress-bar.css';
  @import './components/layout.css';
  @import './components/work-accessories.css';
 
  /* header */
 
  /* hero */
+ /* about me */
+ /* services */
+ /* works */
+ /* professional skills */
+ @import './components/progress-bar.css';
+
+ /* testimonials */
+ /* blogs */
+ /* contact me */
+ /* footer */
+
+ /* ----------------- CODING ----------------- */
+
+ /* header */
+ /* hero */
  .home {
-     display: inline-block;
-     width: 100%;
-     text-align: center;
-     background-image: url(../img/background.jpg);
-     background-size: cover ;
- }
- .hero {
-     display: inline-block;
-     margin: 0 auto;
-     margin-top: 5%;
-     width: 90%;
- }
- .right-column {
-     display: inline-block;
-     float: right;
- }
- .right-column > img {
-     max-width: 100%;
- }
- .left-column {
-     display: inline-block;
-     float: left;
-     margin-top: 26%;
-     color: #fff;
-     text-align: left;
-     border-left: 4px solid #fff;
-     padding-left: 30px;
-     margin-bottom: 70px;
- }
- .left-column > h1 {
-     font-size: 60px;
- }
- .left-column > p {
-     font-size: 20px;
-     padding: 24px 0;
- }
- .txt-type {
-    padding-left: 10px;
- }
- .txt-type > .txt {
-     border-right: 0.2rem solid #fff;
- }
- /* Home Responsive */
- @media (max-width:1400px) {
-    .hero{
-        max-width: 1000px;
-    }
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    background-image: url(../img/background.jpg);
+    background-size: cover ;
+}
+.hero {
+    display: inline-block;
+    margin: 0 auto;
+    margin-top: 5%;
+    width: 90%;
+}
+.right-column {
+    display: inline-block;
+    float: right;
+}
+.right-column > img {
+    max-width: 100%;
+}
+.left-column {
+    display: inline-block;
+    float: left;
+    margin-top: 26%;
+    color: #fff;
+    text-align: left;
+    border-left: 4px solid #fff;
+    padding-left: 30px;
+    margin-bottom: 70px;
+}
+.left-column > h1 {
+    font-size: 60px;
+}
+.left-column > p {
+    font-size: 20px;
+    padding: 24px 0;
+}
+.txt-type {
+   padding-left: 10px;
+}
+.txt-type > .txt {
+    border-right: 0.2rem solid #fff;
+}
+/* Home Responsive */
+@media (max-width:1400px) {
+   .hero{
+       max-width: 1000px;
+   }
 }
 
- @media (max-width:1000px) {
-     .hero{
-         max-width: 700px;
-     } 
- }
+@media (max-width:1000px) {
+    .hero{
+        max-width: 700px;
+    } 
+}
 
- @media (max-width:1000px) {
-     .left-column {
-         margin-top: 10%;
-     }
- }
+@media (max-width:1000px) {
+    .left-column {
+        margin-top: 10%;
+    }
+}
  /* about me */
-.about-section {
+ .about-section {
     display: inline-block;
     width: 100%;
     text-align: center;
@@ -116,14 +130,9 @@
 .right-about > .btn {
     margin: 3% 2% 0 0 ;
 }
-
-
-
  /* services */
-
-
  /* works */
-.work-section {
+ .work-section {
     display: inline-block;
     width: 100%;
     padding-top: 80px;
@@ -133,13 +142,13 @@
     display: inline-block;
 
 }
-.work-section .row > p {
+.work-section .row p {
     padding-bottom: 60px;
     max-width: 700px;
     margin: 0 auto;
     font-size: 16px;
 }
-.work-section .row > .box {
+.work-section .row .box {
     display: inline-block;
     width: 33.45%;
     margin-right:-4px;
@@ -151,12 +160,12 @@
 
 /* works responsive */
 @media(max-width: 1000px){
-   .work-section .row > .box {
+   .work-section .row .box {
        width: 50%;
    }
 }
 @media(max-width: 600px){
-   .work-section .row > .box {
+   .work-section .row .box {
        width: 100%;
    }
 }
@@ -191,6 +200,7 @@
     bottom: 0;
     right: 0;
     margin: auto;
+    cursor: pointer;
 }
 .content .plus-box .plus::after {
     width: 1px;
@@ -239,9 +249,6 @@
     background: transparent;
     border: none;
     color: #fff;
-}
-.plus-box{
-    cursor: pointer;
 }
 .content a {
     color: #fff;
@@ -338,20 +345,6 @@
     background-color: rgba(0, 0, 0, .8);
 }
 
-
- /* professional skills */
- /* testimonials */
- /* blogs */
- /* contact me */
- /* footer */
-
- /* ----------------- CODING ----------------- */
-
- /* header */
- /* hero */
- /* about me */
- /* services */
- /* works */
  /* professional skills */
  .container-skills {
     display: inline-block;
@@ -371,7 +364,6 @@
     float: right;
     width: 50%;
     padding-left: 15px;
-    padding-right: 15px;
 }
 .right-column-skills > img {
     max-width: 100%;
@@ -399,6 +391,10 @@
 
 }
  /* testimonials */
+ /* .testimonials-section img {
+     max-width: 100%;
+     border-radius: 50%;
+ } */
  /* blogs */
  /* contact me */
  /* footer */

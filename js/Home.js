@@ -1,12 +1,15 @@
 //   ----------------- IMPORTS -----------------
-import { progressBarData } from './data/progressBarData.js';
-import { ProgressBar } from './ProgressBar.js';
 //   header
 //   hero
 //   about me
 //   services
 //   works
+import { works } from './components/works.js';
+import { worksData } from './data/worksData.js';
+
 //   professional skills
+import { progressBarData } from './data/progressBarData.js';
+import { ProgressBar } from './components/ProgressBar.js';
 //   testimonials
 //   blogs
 //   contact me
@@ -71,7 +74,9 @@ function init() {
 //   about me
 //   services
 //   works
+new works('.works-img', worksData);
 const gallery = document.querySelectorAll(".row .img-box");
+const plus = document.querySelectorAll(".plus-box")
 const previewBox = document.querySelector(".preview-box");
 const previewImg = previewBox.querySelector("img");
 const closeIcon = previewBox.querySelector(".icon");
@@ -83,7 +88,7 @@ window.onload = ()=>{
     for (let i = 0; i < gallery.length; i++) {
         totalImg.textContent = gallery.length;
         let  newIndex = i;
-        gallery[i].onclick = ()=>{
+        plus[i].onclick = ()=>{
             function preview() {
                 currentImg.textContent = newIndex + 1;
                 let selectedImgUrl = gallery[newIndex].querySelector("img").src;
