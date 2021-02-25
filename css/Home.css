@@ -391,10 +391,178 @@
 
 }
  /* testimonials */
- /* .testimonials-section img {
-     max-width: 100%;
-     border-radius: 50%;
- } */
  /* blogs */
  /* contact me */
+ .contact-section h1,
+ .contact-section .row > p  {
+     text-align: center;
+ }
+ .contact-section > .container > .row > p {
+     max-width: 700px;
+     margin: 0 auto;
+ }
+ .card {
+     display: inline-block;
+     width: 100%;
+     border: 1px solid #dee2e6;
+     margin-top: 60px;
+     text-align: left;
+     position: relative;
+     padding: 5%;
+     box-shadow: 0px 30px 60px 0px rgba(38, 59, 94, 0.1);
+     margin-bottom: 50px;
+ }
+ .card-content {
+     display: inline-block;
+     width: 100%;
+     position: relative;
+     padding-bottom: 20px;
+ }
+ .card-content > h5 {
+     display: inline-block;
+     font-size: 30px;
+     margin-bottom: 10px;
+ }
+ .card-content > p {
+     margin-bottom: 10px;
+ }
+ .card-content > .far {
+     display: inline-block;
+     font-size: 65px;
+     position: absolute;
+     right: 0;
+     top: 0;
+     opacity: 0.1;
+ }
+ form {
+     width: 100%;
+ }
+ form > .name {
+    margin-right: 2%;
+    border: 1px solid #dee2e6 ;
+    max-width: 100%;
+    width: 48.6%;
+    height: 40px;
+    padding: 15px;
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+form > .email {
+    border: 1px solid #dee2e6 ;
+    width: 48.7%;
+    height: 40px;
+    padding: 15px;
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+form > textarea {
+    border: 1px solid #dee2e6 ;
+    width: 100%;
+    resize: vertical;
+    max-height: 150px;
+    min-height: 100px;
+    padding:15px;
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+.card > p {
+    padding-top: 5px;
+    font-size: 13px;
+    display: inline-block;
+}
+.card > button {
+    float: right;
+}
+/* responsive contact me */
+@media(max-width:1200px){
+    form > .email,
+    form > .name {
+        width: 48.7%;
+    }
+}
+@media(max-width:1000px){
+    form > .email,
+    form > .name {
+        width: 48.6%;
+    }
+    .card > p {
+        width: 67%;
+    }
+}
+@media(max-width:767px){
+    form > .email,
+    form > .name {
+        width: 48.3%;
+    }
+    .card > p {
+        width: 100%;
+        padding-bottom: 15px;
+    }
+    .card > button {
+        float: left;
+    }
+}
+@media(max-width:470px){
+    form > .email,
+    form > .name {
+        width: 100%;
+    }
+}
+/* info */
+.icon {
+    max-width: 50px;
+    font-size: 20px;
+    border: 1px solid var(--main-color);
+    text-align: center;
+    border-radius: 50%;
+    height: 50px;
+    display: inline-block;
+    color: var(--main-color);
+    font-weight: 100;
+    width: 50%;
+    margin-right: 10px;
+}
+.icon i {
+    line-height: 50px;
+}
+.info-text {
+    display: inline-block;
+    margin: 0 !important;
+    width: 73%;
+}
+.info-text h2 {
+    font-size: 15px;
+    padding-bottom: 10px;
+}
+.info-text p {
+    font-size: 15px;
+    line-height: 23px;
+    max-width: 100%;
+}
+/* responsive info */
+@media(max-width:1200px){
+    .info-text p {
+        max-width: 55%;
+    }
+}
+@media(max-width:991px){
+    .info-text p {
+        max-width: 80%;
+    }
+}
+@media(max-width:767px){
+    .info-text p {
+        max-width: 100%;
+    }
+}
+@media(max-width:767px){
+    .info-text p {
+        max-width: 100%;
+    }
+}
+@media(max-width:575px){
+    .info-text p {
+        max-width: 60%;
+    }
+}
  /* footer */
