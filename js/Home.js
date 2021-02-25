@@ -3,6 +3,8 @@
 //   hero
 //   about me
 //   services
+import { services } from './components/services.js';
+import { servicesData } from './data/servicesData.js';
 //   works
 import { works } from './components/works.js';
 import { worksData } from './data/worksData.js';
@@ -75,6 +77,7 @@ function init() {
 }
 //   about me
 //   services
+services(servicesData);
 //   works
 new works('.works-img', worksData);
 const gallery = document.querySelectorAll(".row .img-box");
