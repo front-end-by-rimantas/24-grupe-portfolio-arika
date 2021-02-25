@@ -130,6 +130,22 @@
 .right-about > .btn {
     margin: 3% 2% 0 0 ;
 }
+ /* about me responsive */ 
+@media(max-width:1000px){
+    .left-about,
+    .right-about {
+        width: 100%;
+    }
+    .right-about{
+        padding-left: 50px;
+    }
+    .right-about > h1{
+        padding-top: 0;
+    }
+    .left-about img {
+        width: 80%;
+    }
+}
  /* services */
  /* works */
  .work-section {
@@ -388,7 +404,25 @@
     font-weight: 400;
     line-height: 1.6;
     padding-bottom: 25px;
-
+}
+/* responsive skills */
+@media(max-width:1000px){
+    .left-column-skills,
+    .right-column-skills{
+        width: 100%;
+        padding: 0;
+    }
+    .right-column-skills > img{
+        width: 100%;
+    }
+    .right-column-skills {
+        padding-top: 30px;
+    }
+}
+@media(max-width:576px){
+    .container-skills{
+        padding: 0;
+    }
 }
  /* testimonials */
  /* blogs */
