@@ -13,6 +13,8 @@ import { ProgressBar } from './components/ProgressBar.js';
 //   testimonials
 //   blogs
 //   contact me
+import { infoData } from './data/infoData.js';
+import { info } from './components/info.js';
 //   footer
 
 //   ----------------- CODING -----------------
@@ -134,4 +136,5 @@ new ProgressBar('.left-column-skills', progressBarData);
 //   testimonials
 //   blogs
 //   contact me
+new info('.info', infoData);
 //   footer
