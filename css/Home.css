@@ -543,7 +543,7 @@ form > textarea {
     }
 }
 /* info */
-.icon {
+.icons {
     max-width: 50px;
     font-size: 20px;
     border: 1px solid var(--main-color);
@@ -556,7 +556,7 @@ form > textarea {
     width: 50%;
     margin-right: 10px;
 }
-.icon i {
+.icons i {
     line-height: 50px;
 }
 .info-text {
