@@ -5,7 +5,7 @@ function info(selector, data) {
     for (let i = 0; i < data.length; i++) {
         const infoObject = data[i];
         HTML +=`<div class="col-xl-3 col-md-6 col-sm-6 col-12">
-                    <div class="icon">
+                    <div class="icons">
                     <i class="${infoObject.icon}"></i>
                     </div>
                     <div class="info-text">
