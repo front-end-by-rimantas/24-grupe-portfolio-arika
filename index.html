@@ -20,7 +20,29 @@
 
 <body>
     <!-- header -->
-    <!-- hero -->
+    <header class="nav-bar">
+        <div class="container long-row">
+            <img class="white-logo" src="./img/ARIKA.png" alt="white-logo">
+            <nav class="nav">
+                <a class="nav-link" href="#">Home</a>
+                <a class="nav-link" href="#">About</a>
+                <a class="nav-link" href="#">Services</a>
+                <a class="nav-link" href="#">Portfolio</a>
+                <a class="nav-link" href="#">Blog</a>
+                <a class="nav-link" href="#">Contact</a>
+                <a class="nav-link" href="#">Pages</a>
+            </nav>
+            <div class="Socials">
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-twitter"></a>
+                <a href="#" class="fa fa-instagram"></a>
+                <a href="#" class="fa fa-linkedin"></a>
+            </div>
+        </div>
+    </header>
+    <!-- HEADER E
+
+    <!- hero -->
     <section class="home">
         <div class="container1 hero">
             <div class="left-column">
@@ -54,6 +76,13 @@
         </div>
     </section>
     <!-- services -->
+    <section id="services" class="container bg-grey">
+        <div class="row">
+            <h2 class="col-12 title">My <mark>Services</mark></h2>
+            <p class="c-gray">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+        </div>
+        <div id="services_block" class="row services"></div>
+    </section>
     <!-- works -->
     <section class="work-section">
         <div class="container work">
@@ -99,22 +128,34 @@
 </div>
 
     <!-- testimonials -->
-    <!-- <section class="testimonials-section">
+    <!-- blogs -->
+    <!-- contact me -->
+    <section class="contact-section">
         <div class="container">
             <div class="row">
-                <div class="card col-xl-4 col-sm-6 col-xs-12">
-                    <img src="./img/testimonials1.jpg" alt="">
-                </div>
-                <div class="card col-xl-4 col-sm-6">
-                    <img src="./img/testimonials1.jpg" alt="">
-                </div>
-                <div class="card col-xl-4 col-sm-6">
-                    <img src="./img/testimonials1.jpg" alt="">
+                <h1 class="title">Get in <mark>touch</mark></h1>
+                <p class="c-gray">Hello, I’m a UI/UX Designer & Frontend,Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</p>
+                <div class="card">
+                    <div class="card-content">
+                        <h5>Drop us a line</h5>
+                        <p class="c-gray">We are here to answer any question you may have</p>
+                        <i class="far fa-paper-plane"></i>
+                    </div>
+                    <form action="">
+                        <input type="text" class="name" placeholder="Name">
+                        <input type="email" name="" id="" class="email" placeholder="Email">
+                        <textarea name="" id="" cols="30" rows="10" placeholder="Your Comment"></textarea>
+                    </form>
+                    <p class="c-gray"> We respect your privacy and do not tolerate spam and will never sell, rent, lease or give away your information </p>
+                    <button class="btn">Get In Touch</button>
                 </div>
             </div>
+            <!-- info -->
+            <div class="row info"></div>
         </div>
-    </section> -->
-    <!-- blogs -->
+    </section>
+  
+<!-- blogs -->
  <section id="blog" class="section blogs">
      <div class="container gray-bg">
          <div class="row" >
@@ -175,10 +216,7 @@
 
          </div>
      </div>
-
-
- </section>
-    <!-- contact me -->
+</section>
     <!-- footer -->
     <script src="./js/Home.js" type="module"></script>
 </body>

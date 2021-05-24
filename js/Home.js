@@ -3,6 +3,8 @@
 //   hero
 //   about me
 //   services
+import { services } from './components/services.js';
+import { servicesData } from './data/servicesData.js';
 //   works
 import { works } from './components/works.js';
 import { worksData } from './data/worksData.js';
@@ -13,6 +15,8 @@ import { ProgressBar } from './components/ProgressBar.js';
 //   testimonials
 //   blogs
 //   contact me
+import { infoData } from './data/infoData.js';
+import { info } from './components/info.js';
 //   footer
 
 //   ----------------- CODING -----------------
@@ -73,6 +77,7 @@ function init() {
 }
 //   about me
 //   services
+services(servicesData);
 //   works
 new works('.works-img', worksData);
 const gallery = document.querySelectorAll(".row .img-box");
@@ -134,4 +139,5 @@ new ProgressBar('.left-column-skills', progressBarData);
 //   testimonials
 //   blogs
 //   contact me
+new info('.info', infoData);
 //   footer
