@@ -15,3 +15,7 @@ mark {
         background-position: bottom;
         background-color: transparent;
     }
+
+.center {
+    text-align: center;
+}
